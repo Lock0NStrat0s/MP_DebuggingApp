@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using MP_Debugging;
+
+try
+{
+    double i = Methods.W(0);
+    Console.WriteLine(i);
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Something went wrong.");
+}
+
